@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мессенджер «Hexlet Chat»</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+  </head>
+  <body class="bg-gray d-flex justify-content-center overflow-hidden container-xxl p-0 max-vh">
+    <div class="point">
+      <div class="header col-4 d-flex flex-row"><img class="svg" src="../app/src/img/logo.svg" width="25px" height="40px">
+        <div class="navig d-flex flex-row align-items-center justify-content-center"><a class="nav-link link-light d-flex align-items-center active" href="#"><img class="contacs" src="../app/src/img/people.svg" width="25px" height="25px">
+            <p class="small d-none d-md-inline-block">Контакты</p></a><a class="nav-link link-light d-flex align-items-center active" href="#"><img class="chat" src="../app/src/img/chat.svg" width="25px" height="25px">
+            <p class="small d-none d-md-inline-block">Сообщения</p></a><a class="nav-link link-light d-flex align-items-center active" href="#"><img class="person" src="../app/src/img/person.svg" width="25px" height="25px">
+            <p class="small d-none d-md-inline-block">Профиль</p></a></div>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="left-aside col-4 scroll px-4">
+          <h2 class="cont fw-bold pt-5">Контакты</h2>
+          <form>
+            <input class="form-control border-0 mt-4 p-4 w-416 ms-4" type="text" placeholder="Поиск по контактам">
+          </form>
+          <hr class="hr">
+          <p class="text-muted alf mt-3">А</p>
+          <div class="profil d-flex flex-row align-items-center shadow-sm"><img class="rounded-circle avatar" src="../app/src/img/avatar_3.jpg">
+            <div class="text d-flex flex-column"><strong>Алексей Примадонин</strong>
+              <p class="text-muted font">Онлайн</p>
+            </div>
+          </div>
+          <p class="text-muted alf mt-3">В</p>
+          <div class="profil d-flex flex-row align-items-center shadow-sm"><img class="rounded-circle avatar" src="../app/src/img/avatar_4.jpg">
+            <div class="text d-flex flex-column"><strong>Вениамин Редакторович</strong>
+              <p class="text-muted font">Онлайн</p>
+            </div>
+          </div>
+          <p class="text-muted alf mt-3">Д</p>
+          <div class="profil d-flex flex-row align-items-center shadow-sm"><img class="rounded-circle avatar" src="../app/src/img/avatar_2.jpg">
+            <div class="text d-flex flex-column"><strong>Джедай Падаванов</strong>
+              <p class="text-muted font">Был онлайн вчера</p>
+            </div>
+          </div>
+          <p class="text-muted alf mt-3">К</p>
+          <div class="profil d-flex flex-row align-items-center shadow-sm mb-14"><img class="rounded-circle avatar" src="../app/src/img/avatar_1.jpg">
+            <div class="text d-flex flex-column"><strong>Кодовёнок Хекслетович</strong>
+              <p class="text-muted font">Был онлайн 3 часа назад</p>
+            </div>
+          </div>
+          <div class="profil d-flex flex-row align-items-center shadow-sm mb-3"><img class="rounded-circle avatar" src="../app/src/img/avatar_5.jpg">
+            <div class="text d-flex flex-column"><strong>Королева Верстальщина</strong>
+              <p class="text-muted font">Была онлайн вчера</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-side bg-white overflow-auto hide-scroll border-0 border-start d-none d-md-block m-0 me-md-4 w-100 radius-right">
+          <div class="d-flex flex-column align-items-center justify-content-center h-100"><img class="rounded-circle main-img" src="../app/src/img/avatar_1.jpg">
+            <p class="fw-bold m-0">Привет, Кодовёнок</p>
+            <p class="small m-0">Выбери чат, чтобы начать общаться</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

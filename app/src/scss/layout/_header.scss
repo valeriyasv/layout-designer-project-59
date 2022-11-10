@@ -1,0 +1,32 @@
+.header {
+  height: 72px;
+  background-color: #4545A5;
+  border-top-left-radius: 1rem;
+  position: relative;
+  color: white;
+}
+
+.svg {
+  filter: invert(1);
+  z-index: 4;
+  margin: 16px 28px 16px 16px;
+}
+
+.contacs {
+  filter: invert(1);
+  margin: 24px 8px 24px 0;
+}
+
+.chat {
+  margin: 24px 8px 24px 32px;
+  filter: invert(1);
+}
+
+.person {
+    margin: 24px 8px 24px 32px;
+    filter: invert(1);
+}
+
+p {
+  margin: 0;
+}
