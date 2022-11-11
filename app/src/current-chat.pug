@@ -1,0 +1,77 @@
+.d-flex.flex-row
+    .d-flex.flex-column
+        include header.pug
+        .left-aside.scroll
+          h2.cont.fw-bold.pt-5 Чаты
+          form
+            input.form-control.border-0.mt-4.p-4.w-416.ms-4(type="text" placeholder="Поиск по cообщениям")
+          hr.hr
+          .cc-card.mb-3.px-3.d-flex.align-items-center.shadow-sm.mw-100
+            img.rounded-circle.avatar(src="../app/src/img/avatar_4.jpg")
+            .m-4.d-flex.flex-column.w-100.overflow-auto.position-relative
+              p.fw-bold.m-0.text-truncate.contact-card-name Вениамин Редакторович
+              p.small.m-0.top-0.end-0 11:45
+              p.small.m-0.w-100.text-truncate o_O
+
+          .profil.d-flex.flex-row.align-items-center.shadow-sm.mb-3.mt-3.justify-content-between
+            img.rounded-circle.avatar(src="../app/src/img/avatar_2.jpg")
+            .text.d-flex.flex-column
+              strong Джедай Падаванов
+              p.text-muted.font.txto-e.text-nowrap Привет, скоро третий проект? Уже скоро надо будет выложить
+            p.small.time 10:12
+
+          .profil.d-flex.flex-row.align-items-center.shadow-sm
+            img.rounded-circle.avatar(src="../app/src/img/avatar_3.jpg")
+            .text.d-flex.flex-column
+              strong Алексей Примадонин
+              p.text-muted.font Тесты упали >_<
+            p.small.time 08:53
+
+    .right-side.bg-white.overflow-auto.hide-scroll.border-0.border-start.d-none.d-md-block.m-0.me-md-4.w-100.radius-right
+        .nav.justify-content-between.align-items-center.radius-right-top.border-0.border-bottom.border-gray.bg-white.sticky-top
+            .ps-3.d-flex.align-items-center
+                img(src="../app/src/img/avatar_4.jpg", alt="contact image" class="rounded-circle" style="width: 50px")
+                .p-4
+                    p.fw-bold.m-0 Вениамин Редакторович
+                    p.small.m-0.text-muted Онлайн
+        .current-chat.d-flex.flex-column.m-5
+            .d-inline-flex.align-self-start.mb-3.radius.align-items-end
+                img.me-3.rounded-circle.d-none.d-md-inline-block(src="../app/src/img/avatar_4.jpg", alt="avatar" style="width: 50px")
+                span.bg-light.border-0.radius.w-100.p-4.shadow-sm.chat-message
+                    p.m-0.fw-bold.mb-1 Вениамин Редакторович
+                    p.m-0.text-muted Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+                    hr.mt-2.mb-1
+                    p.m-0.small.text-muted.text-light.opacity-50 8 минут назад
+            .d-inline-flex.align-self-end.mb-3.radius.align-items-end
+                img.me-3.rounded-circle.d-none.d-md-inline-block(src="../app/src/img/avatar_1.jpg", alt="avatar" style="width: 50px")
+                span.bg-primaryy.text-light.border-0.radius.w-100.p-4.shadow-sm.chat-message
+                    p.m-0 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+                    hr.mt-2.mb-1
+                    p.m-0.small.opacity-50.color 8 минут назад
+            .d-inline-flex.align-self-start.mb-3.radius.align-items-end
+                img.me-3.rounded-circle.d-none.d-md-inline-block(src="../app/src/img/avatar_4.jpg", alt="avatar" style="width: 50px")
+                span.bg-light.border-0.radius.w-100.p-4.shadow-sm.chat-message
+                    p.m-0.fw-bold.mb-1 Вениамин Редакторович
+                    p.m-0 Лады
+                    hr.mt-2.mb-1
+                    p.m-0.small.opacity-50.text-muted 5 минут назад
+            .d-inline-flex.align-self-end.mb-3.radius.align-items-end
+                img.me-3.rounded-circle.d-none.d-md-inline-block(src="../app/src/img/avatar_1.jpg", alt="avatar" style="width: 50px")
+                span.bg-primaryy.text-light.border-0.radius.w-100.p-4.shadow-sm.chat-message
+                    p.m-0 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
+                    hr.mt-2.mb-1
+                    p.m-0.small.opacity-50.color 3 минуты назад
+            .d-inline-flex.align-self-start.mb-3.radius.align-items-end
+                img.me-3.rounded-circle.d-none.d-md-inline-block(src="../app/src/img/avatar_4.jpg", alt="avatar" style="width: 50px")
+                span.bg-light.border-0.radius.w-100.p-4.shadow-sm.chat-message
+                    p.m-0.fw-bold.mb-1 Вениамин Редакторович
+                    p.m-0 о_О
+                    hr.mt-2.mb-1
+                    p.m-0.small.opacity-50.text-muted Только что
+        
+        .chat-input.nav.m-0.justify-content-between.align-items-center.radius-right-bottom.bg-white.sticky-top.sticky-bottom.start-0.w-100
+            .m-0.mx-md-5.border-0.border-top.border-gray.w-100
+                form.d-flex.justify-conent-between.align-items-center.px-3
+                    input.form-control.border-0.rounded-0.shadow-none.px-3.px-md-2(type="text" placeholder="Напишите сообщение...")
+                    a.send-button.bg-primaryy.d-flex.justify-content-center.align-items-center.rounded-circle(href="#")
+                        .i.bi-cursor.text-white

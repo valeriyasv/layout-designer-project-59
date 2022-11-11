@@ -13,6 +13,45 @@ body {
   background-color: #EFEFEF;
 }
 
+.bg-primaryy {
+  background-color: #4545a5;
+  width: 557px;
+}
+
+::before {
+
+}
+
+.send-button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  margin: 18px 0;
+}
+
+.chat-message {
+  max-width: 557px;
+  border-radius: 16px;
+}
+
+.cont {
+  padding-left: 24px;
+}
+
+.w-384 {
+  width: 384px;
+}
+
+.mx-40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.mt-88 {
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
 
 .scroll {
   overflow-y: scroll;
@@ -30,6 +69,7 @@ body {
 .right-side {
   height: 1056px;
   width: 928px;
+  border-top-right-radius: 1rem;
 }
 
 .search {
@@ -49,6 +89,7 @@ body {
 
 .alf {
   margin-bottom: 17px;
+  margin-left: 24px;
 }
 
 .avatar {
@@ -59,6 +100,8 @@ body {
 
 .profil {
   height: 93px;
+  width: 416px;
+  margin-left: 24px;
 }
 
 .font {
@@ -79,11 +122,7 @@ body {
   height: 200px;
 }
 
-.right-aside {
-  position: absolute;
-  top: 460px;
-  right: 333px;
-}
+
 
 .mt-18 {
   margin-top: 18px;
@@ -96,6 +135,14 @@ a {
 .profil:hover {
   background-color: #4545a5;
 
+  .font {
+    color:  #EFEFEF;
+  }
+
+}
+
+.left-side {
+  width: 464px;
 }
 
 .font .profil:hover {
@@ -104,4 +151,21 @@ a {
 
 strong .profil:hover {
   color: #FBFBFB;
+}
+
+.txto-e {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.color {
+  color: #EFEFEF;
+}
+
+.time {
+  text-align: right;
+}
+
+.w-286 {
+  width: 286px;
 }

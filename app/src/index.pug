@@ -7,51 +7,11 @@ html(lang="en")
     title Мессенджер «Hexlet Chat»
     link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous")
     link(rel="stylesheet" href="./css/style.css" type="text/css")
-  body.bg-gray.d-flex.justify-content-center.overflow-hidden.container-xxl.p-0.max-vh
+  body.bg-gray.d-flex.justify-content-center.container-xxl.p-0.max-vh
     .point
-      include header.pug
-      .d-flex.flex-row
-        .left-aside.col-4.scroll.px-4
-          h2.cont.fw-bold.pt-5 Контакты
-          form
-            input.form-control.border-0.mt-4.p-4.w-416.ms-4(type="text" placeholder="Поиск по контактам")
-          hr.hr
-          p.text-muted.alf.mt-3 А
-          .profil.d-flex.flex-row.align-items-center.shadow-sm
-            img.rounded-circle.avatar(src="../app/src/img/avatar_3.jpg")
-            .text.d-flex.flex-column
-              strong Алексей Примадонин
-              p.text-muted.font Онлайн
+      include contact.pug 
+      include chat.pug 
+      include profil.pug 
+      include current-chat.pug
 
-          p.text-muted.alf.mt-3 В
-          .profil.d-flex.flex-row.align-items-center.shadow-sm
-            img.rounded-circle.avatar(src="../app/src/img/avatar_4.jpg")
-            .text.d-flex.flex-column
-              strong Вениамин Редакторович
-              p.text-muted.font Онлайн
-
-          p.text-muted.alf.mt-3 Д
-          .profil.d-flex.flex-row.align-items-center.shadow-sm
-            img.rounded-circle.avatar(src="../app/src/img/avatar_2.jpg")
-            .text.d-flex.flex-column
-              strong Джедай Падаванов
-              p.text-muted.font Был онлайн вчера
-
-          p.text-muted.alf.mt-3 К
-          .profil.d-flex.flex-row.align-items-center.shadow-sm.mb-14
-            img.rounded-circle.avatar(src="../app/src/img/avatar_1.jpg")
-            .text.d-flex.flex-column
-              strong Кодовёнок Хекслетович
-              p.text-muted.font Был онлайн 3 часа назад
-
-          .profil.d-flex.flex-row.align-items-center.shadow-sm.mb-3
-            img.rounded-circle.avatar(src="../app/src/img/avatar_5.jpg")
-            .text.d-flex.flex-column
-              strong Королева Верстальщина
-              p.text-muted.font Была онлайн вчера
-
-        .right-side.bg-white.overflow-auto.hide-scroll.border-0.border-start.d-none.d-md-block.m-0.me-md-4.w-100.radius-right
-          .d-flex.flex-column.align-items-center.justify-content-center.h-100
-            img.rounded-circle.main-img(src="../app/src/img/avatar_1.jpg")
-            p.fw-bold.m-0 Привет, Кодовёнок
-            p.small.m-0 Выбери чат, чтобы начать общаться
+      

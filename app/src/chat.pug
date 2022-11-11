@@ -1,0 +1,30 @@
+.d-flex.flex-row
+      .d-flex.flex-column
+        include header.pug
+        .left-aside.scroll
+          h2.cont.fw-bold.pt-5 Чаты
+          form
+            input.form-control.border-0.mt-4.p-4.w-416.ms-4(type="text" placeholder="Поиск по cообщениям")
+          hr.hr
+          .profil.d-flex.flex-row.align-items-center.shadow-sm.mb-3.mt-5.justify-content-between
+            img.rounded-circle.avatar(src="../app/src/img/avatar_4.jpg")
+            .text.d-flex.flex-column
+              strong Вениамин Редакторович
+              p.text-muted.font.txto-e o_O
+            p.small.time 11:45
+
+          .profil.d-flex.flex-row.align-items-center.shadow-sm.mb-3.mt-3.justify-content-between
+            img.rounded-circle.avatar(src="../app/src/img/avatar_2.jpg")
+            .text.d-flex.flex-column
+              strong Джедай Падаванов
+              p.text-muted.font.txto-e.text-nowrap Привет, скоро третий проект? Уже скоро надо будет выложить
+            p.small.time 10:12
+
+          .profil.d-flex.flex-row.align-items-center.shadow-sm
+            img.rounded-circle.avatar(src="../app/src/img/avatar_3.jpg")
+            .text.d-flex.flex-column
+              strong Алексей Примадонин
+              p.text-muted.font Тесты упали >_<
+            p.small.time 08:53
+
+      include hello.pug
